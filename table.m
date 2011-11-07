@@ -23,7 +23,7 @@ function [ result ] = table(Z,A,varargin)
 % TODO
 % 1-[DONE]Fix Moller filename to make it compatible with directly downloaded
 % filename
-% 2-Upload tscm data file and set URL
+% 2-[DONE]Upload tscm data file and set URL
 % 3-[DONE]Set download URL for each table type
 % 4-[DONE]Set parameter correspondence for each table
 % 5-Improve help
