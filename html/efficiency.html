@@ -1,0 +1,139 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Efficiency of a cylindrical detector for a Marinelli beaker source</title><meta name="generator" content="MATLAB 7.11"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2011-05-02"><meta name="DC.source" content="efficiency.m"><style type="text/css">
+
+body {
+  background-color: white;
+  margin:10px;
+}
+
+h1 {
+  color: #990000; 
+  font-size: x-large;
+}
+
+h2 {
+  color: #990000;
+  font-size: medium;
+}
+
+/* Make the text shrink to fit narrow windows, but not stretch too far in 
+wide windows. */ 
+p,h1,h2,div.content div {
+  max-width: 600px;
+  /* Hack for IE6 */
+  width: auto !important; width: 600px;
+}
+
+pre.codeinput {
+  background: #EEEEEE;
+  padding: 10px;
+}
+@media print {
+  pre.codeinput {word-wrap:break-word; width:100%;}
+} 
+
+span.keyword {color: #0000FF}
+span.comment {color: #228B22}
+span.string {color: #A020F0}
+span.untermstring {color: #B20000}
+span.syscmd {color: #B28C00}
+
+pre.codeoutput {
+  color: #666666;
+  padding: 10px;
+}
+
+pre.error {
+  color: red;
+}
+
+p.footer {
+  text-align: right;
+  font-size: xx-small;
+  font-weight: lighter;
+  font-style: italic;
+  color: gray;
+}
+
+  </style></head><body><div class="content"><h1>Efficiency of a cylindrical detector for a Marinelli beaker source</h1><!--introduction--><pre>This program calculates the efficiency of a cylindrical detector for a
+Marinelli beaker source.</pre><pre>References:
+M.I. Abbas, Applied Radiation and Isotopes 54 (2001) 761?768
+Selim, Y.S., Abbas, M.I., Fawzy, M.A., Radiat.Phys.Chem.53(1998), 589?592.
+M.I. Abbasa, Y.S. Selima, M. Bassiounib, Radiation Physics and Chemistry 61 (2001) 429?431</pre><pre>   Copyright(c)2011-2012
+       Yisel Martinez (yisel@instec.cu)</pre><pre>   This program is free software: you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.</pre><pre>   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.</pre><pre>   You should have received a copy of the GNU General Public License
+   along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</pre><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">TODO</a></li><li><a href="#2">Geometry definition</a></li><li><a href="#3">Factor fatt</a></li><li><a href="#4">Calculation of epsilon(rho&lt;R,h)</a></li><li><a href="#5">Efficiency of parts V1 and V2</a></li></ul></div><h2>TODO<a name="1"></a></h2><h2>Geometry definition<a name="2"></a></h2><pre class="codeinput">H=3;             <span class="comment">%Height of volume V1 in cm</span>
+H_=8;            <span class="comment">%Height of volume V2 in cm</span>
+S=4;             <span class="comment">%Radius of volume V1 in cm</span>
+S_=2;            <span class="comment">%Radius of volume V1 in cm</span>
+</pre><h2>Factor fatt<a name="3"></a></h2><pre class="codeinput">mu=[0.2 0.1 0.4];
+delta=[0.4 0.2 0.23];
+f_att=exp(-dot(mu,delta));
+</pre><h2>Calculation of epsilon(rho&lt;R,h)<a name="4"></a></h2><h2>Efficiency of parts V1 and V2<a name="5"></a></h2><p class="footer"><br>
+      Published with MATLAB&reg; 7.11<br></p></div><!--
+##### SOURCE BEGIN #####
+%% Efficiency of a cylindrical detector for a Marinelli beaker source
+%  This program calculates the efficiency of a cylindrical detector for a 
+%  Marinelli beaker source.
+%  
+%  References: 
+%  M.I. Abbas, Applied Radiation and Isotopes 54 (2001) 761?768
+%  Selim, Y.S., Abbas, M.I., Fawzy, M.A., Radiat.Phys.Chem.53(1998), 589?592.
+%  M.I. Abbasa, Y.S. Selima, M. Bassiounib, Radiation Physics and Chemistry 61 (2001) 429?431
+%
+%     Copyright(c)2011-2012
+%         Yisel Martinez (yisel@instec.cu)
+%
+%     This program is free software: you can redistribute it and/or modify
+%     it under the terms of the GNU General Public License as published by
+%     the Free Software Foundation, either version 3 of the License, or
+%     (at your option) any later version.
+%
+%     This program is distributed in the hope that it will be useful,
+%     but WITHOUT ANY WARRANTY; without even the implied warranty of
+%     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%     GNU General Public License for more details.
+%
+%     You should have received a copy of the GNU General Public License
+%     along with this program.  If not, see <http://www.gnu.org/licenses/>. 
+
+%% TODO
+% 
+
+%% Geometry definition
+H=3;             %Height of volume V1 in cm
+H_=8;            %Height of volume V2 in cm
+S=4;             %Radius of volume V1 in cm
+S_=2;            %Radius of volume V1 in cm
+
+%% Factor fatt
+mu=[0.2 0.1 0.4];
+delta=[0.4 0.2 0.23];
+f_att=exp(-dot(mu,delta));
+
+%% Calculation of epsilon(rho<R,h)
+
+
+
+%% Efficiency of parts V1 and V2
+
+
+
+
+
+
+
+##### SOURCE END #####
+--></body></html>
